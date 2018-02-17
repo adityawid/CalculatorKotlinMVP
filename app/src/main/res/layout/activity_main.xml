@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.devjurnal.calculatorkotlinmvp.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtInputNilai1"
+        android:background="@android:drawable/editbox_background"
+        android:hint="masukkan nilai"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtInputNilai2"
+        android:background="@android:drawable/editbox_background"
+        android:hint="masukkan nilai 2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:id="@+id/btnAdd"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:id="@+id/btnMin"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="*"
+            android:id="@+id/btnKali"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="/"
+            android:id="@+id/btnBagi"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil :"
+        android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hasil"
+        android:textSize="20sp"
+        android:id="@+id/tvHasil"/>
+
+
+</LinearLayout>
